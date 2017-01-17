@@ -3,6 +3,9 @@
 */
 
 body {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
@@ -696,6 +699,19 @@ a.icon-primary:focus{
     color: #524d49;
 }
 
+@media (min-width: 640px) and (max-width: 991px) {
+    .list-fitch .list-fitch-item-absolute {
+        position: relative;
+        left: -10px;
+    }
+
+    .list-fitch .list-fitch-item-absolute .h3 {
+        position: absolute;
+        bottom: -19px;
+        left: -10px;
+    }
+}
+
 @media (min-width: 1200px) {
     .list-fitch .h3 {
         white-space: nowrap;
@@ -720,7 +736,7 @@ a.icon-primary:focus{
     margin-top: 27px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 640px) and (max-width: 991px) {
     .list-fitch {
         display: -webkit-box;
         display: -ms-flexbox;
