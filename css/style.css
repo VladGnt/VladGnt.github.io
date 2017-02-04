@@ -2162,8 +2162,8 @@ h3 + .product-list {
         padding: 20px;
         font-weight: 600;
         color: #9c9c9c;
-        border-color: #fcfcfc;
-        background: #fcfcfc;
+        border-color: #f9f9f9;
+        background: #f9f9f9;
     }
 
     .nav-sign-reg-tabs-wrap .nav-tabs>li>a:before {
