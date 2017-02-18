@@ -971,6 +971,11 @@ a.icon-primary:focus{
 * Helpers
 */
 
+.text-regular {
+    font-weight: 400;
+    font-family: 'Myriad Pro Regular';
+}
+
 .text-sbold {
     font-weight: 600;
 }
@@ -1327,6 +1332,7 @@ a.icon-primary:focus{
     bottom: 30px;
     display: none;
     cursor: pointer;
+    z-index: 99;
 }
 
 #scrollup .icon {
@@ -2742,4 +2748,349 @@ h3 + .product-list {
 .form-group-info-wrap .form-group-info .desc-cust {
     font-size: 11.5px;
     font-weight: 300;
+}
+
+
+/*
+ * Nav Tabs Sub
+ */
+
+.nav-tabs-mod.nav-tabs>li>a {
+    color: #0e76bd;
+    font-weight: 400;
+    font-family: 'Myriad Pro Regular';
+    background: transparent;
+    border-color: transparent;
+    padding: 22px 28px 6px;
+    font-size: 22px;
+}
+
+@media (min-width: 768px) {
+    .nav-tabs-mod.nav-tabs>li+li {
+        margin-left: 2px;
+    }
+}
+
+.tab-content-mod.tab-content {
+    padding: 0;
+}
+
+.nav-tabs-mod.nav-tabs>li.active>a, .nav-tabs-mod.nav-tabs>li.active>a:focus, .nav-tabs-mod.nav-tabs>li.active>a:hover,
+.nav-tabs-mod.nav-tabs>li>a:hover, .nav-tabs-mod.nav-tabs>li>a:focus{
+    color: #727171;
+    background: #fcfcfe;
+    border-color: #dddddd;
+    font-weight: 400;
+    font-family: 'Myriad Pro Regular';
+}
+
+.nav-tabs-sub {
+    background: #faf9fd;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: 768px) {
+    .nav-tabs-sub {
+        padding-left: 25px;
+    }
+}
+
+.tab-content-sub {
+    padding: 0;
+}
+
+.nav-tabs-sub.nav-tabs>li>a {
+    font-size: 17px;
+    background: transparent;
+    border-color: transparent;
+    color: #0e76bd;
+    font-weight: 400;
+    font-family: 'Myriad Pro Regular';
+}
+
+@media (min-width: 768px) {
+    .nav-tabs-sub.nav-tabs>li>a {
+        padding: 20px 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav-tabs-sub.nav-tabs>li+li {
+        margin-left: 14px;
+    }
+}
+
+.nav-tabs-sub.nav-tabs>li.active>a,.nav-tabs-sub.nav-tabs>li.active>a:focus,.nav-tabs-sub.nav-tabs>li.active>a:hover, .nav-tabs-sub.nav-tabs>li>a:hover,.nav-tabs-sub.nav-tabs>li>a:focus {
+    color: #727171;
+    font-weight: 400;
+    font-family: 'Myriad Pro Regular';
+    background: transparent;
+    border-color: transparent;
+}
+
+@media (min-width: 768px) {
+    .nav-tabs-sub.nav-tabs>li.active>a {
+        position: relative;
+    }
+
+    .nav-tabs-sub.nav-tabs>li.active>a:after {
+        content: '';
+        position: absolute;
+        bottom: -11px;
+        z-index: 2;
+        left: 50%;
+        width: 23px;
+        height: 11px;
+        background-image: url(../images/tab-arrow.png);
+        background-repeat:no-repeat;
+        background-position: center center;
+        background-size: cover;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+}
+
+.tab-content-sub-1-title {
+    padding: 28px 32px;
+    color: #727171;
+    background: #f5f4f7;
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        display: block;
+    }
+}
+
+.table-products {
+    background: #faf9fd;
+}
+
+.table-products tbody tr {
+    background: #f5f4f7;
+}
+
+.table-products.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table-products.table>tbody>tr>td, .table-products.table>tbody>tr>th, .table-products.table>tfoot>tr>td, .table-products.table>tfoot>tr>th, .table-products.table>thead>tr>td, .table-products.table>thead>tr>th {
+    border-color: #cfcfcf;
+}
+
+.table-products-title {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Myriad Pro Bold';
+    color: #727171;
+    display: inline-block;
+}
+
+.table-products-title:hover,
+.table-products-title:focus {
+    color: #0e76bd;
+}
+
+.list-inline-products {
+    font-size: 10px;
+    margin-top: 18px;
+}
+
+.list-inline-products a {
+    font-weight: 600;
+    font-family: 'Myriad Pro Bold';
+}
+
+.list-inline-products a:hover,
+.list-inline-products a:focus {
+    color: #0e76bd;
+}
+
+.list-inline-products .view {
+    color: #727171;
+}
+
+.list-inline-products .edit {
+    color: #727171;
+}
+
+.list-inline-products .deactivate {
+    color: #ff8b2c;
+}
+
+.list-inline-products .delete {
+    color: #ff0000;
+}
+
+.btn-xxs {
+    font-size: 8px;
+    padding: 4px 10px 6px;
+}
+
+.btn-gray {
+    color: #fff;
+    background: #aeaeae;
+    border-color: #aeaeae;
+}
+
+.btn-gray:hover,
+.btn-gray:focus {
+    color: #fff;
+    background: #ff8b2c;
+    border-color: #ff8b2c;
+}
+
+.table-products {
+    font-size: 12px;
+    color: #727171;
+    margin-bottom: 0;
+}
+
+.table-products thead {
+    font-size: 14px;
+}
+
+.table-products thead th a {
+    color: #727171;
+}
+
+.table-products thead th {
+    padding-top: 0!important;
+}
+
+.table-products .checkbox {
+    top: 13px;
+}
+
+.table-products thead th:nth-child(n+4) {
+    text-align: center;
+}
+
+.table-products thead th:nth-child(n+4) a {
+    color: #0e76bd;
+}
+
+.nav-tabs-wrap + .pagination-product {
+    margin-top: 50px;
+}
+
+.table-products tbody td:nth-child(n+4) {
+    text-align: center;
+}
+
+
+@media (min-width: 1200px) {
+    .table-products.table>tbody>tr>td, .table-products.table>tbody>tr>th, .table-products.table>tfoot>tr>td, .table-products.table>tfoot>tr>th, .table-products.table>thead>tr>td, .table-products.table>thead>tr>th {
+        padding: 14px 12px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .table-responsive.table-products {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        min-height: .01%;
+        display: block;
+    }
+    .table-products thead th:nth-child(n+4) {
+        font-size: 12px;
+        min-width: 115px;
+    }
+    .table-products tbody td:nth-child(3) {
+        min-width: 150px;
+    }
+
+    .table-products tbody td:nth-child(2) {
+        min-width: 100px;
+    }
+}
+
+.pin-custom {
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .pin-custom {
+        min-height: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .pin-custom {
+        min-height: 680px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pin-custom {
+        min-height: 802px;
+    }
+}
+
+.pin-custom-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    padding: 15px;
+    text-align: center;
+}
+
+.pin-custom:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../images/quote.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.pin-custom .pin-title {
+    color: #767070;
+    font-size: 20px;
+}
+.pin-custom .btn {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .pin-custom .pin-title {
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+    .pin-custom .btn {
+        margin-top: 50px;
+        font-size: 20px;
+        padding: 18px 22px 24px;
+    }
+
+    .pin-custom .btn.btn-offer .icon {
+        font-size: 22px;
+    }
+}
+@media (min-width: 992px) {
+    .pin-custom .pin-title {
+        font-size: 36px;
+    }
+
+    .pin-custom .btn {
+        margin-top: 100px;
+        font-size: 25px;
+        padding: 22px 25px 28px;
+    }
+
+    .pin-custom .btn.btn-offer .icon {
+        font-size: 29px;
+    }
 }
