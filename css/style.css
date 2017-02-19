@@ -2766,6 +2766,10 @@ h3 + .product-list {
 }
 
 @media (min-width: 768px) {
+    .nav-tabs-mod.nav-tabs>li>a {
+        border-bottom: none;
+    }
+
     .nav-tabs-mod.nav-tabs>li+li {
         margin-left: 2px;
     }
@@ -2786,10 +2790,16 @@ h3 + .product-list {
 
 .nav-tabs-sub {
     background: #faf9fd;
+    border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
 }
 
 @media (min-width: 768px) {
+    .nav-tabs-mod.nav-tabs>li.active>a, .nav-tabs-mod.nav-tabs>li.active>a:focus, .nav-tabs-mod.nav-tabs>li.active>a:hover,
+    .nav-tabs-mod.nav-tabs>li>a:hover, .nav-tabs-mod.nav-tabs>li>a:focus{
+        border-bottom: none;
+    }
+
     .nav-tabs-sub {
         padding-left: 25px;
     }
@@ -2880,8 +2890,7 @@ h3 + .product-list {
 
 .table-products-title {
     font-size: 16px;
-    font-weight: 600;
-    font-family: 'Myriad Pro Bold';
+    font-weight: 700;
     color: #727171;
     display: inline-block;
 }
@@ -2897,8 +2906,7 @@ h3 + .product-list {
 }
 
 .list-inline-products a {
-    font-weight: 600;
-    font-family: 'Myriad Pro Bold';
+    font-weight: 700;
 }
 
 .list-inline-products a:hover,
@@ -2981,7 +2989,7 @@ h3 + .product-list {
 
 @media (min-width: 1200px) {
     .table-products.table>tbody>tr>td, .table-products.table>tbody>tr>th, .table-products.table>tfoot>tr>td, .table-products.table>tfoot>tr>th, .table-products.table>thead>tr>td, .table-products.table>thead>tr>th {
-        padding: 14px 12px;
+        padding: 14px 11px;
     }
 }
 
@@ -3093,4 +3101,214 @@ h3 + .product-list {
     .pin-custom .btn.btn-offer .icon {
         font-size: 29px;
     }
+}
+
+.table-pay {
+    display: table;
+    margin-bottom: 0;
+    background: #fafafa;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.table-pay-title {
+    font-size: 13px;
+    color: #727171;
+    font-weight: 700;
+}
+
+.table-pay-desc {
+    font-size: 9.5px;
+    font-weight: 300;
+    color: #727171;
+}
+
+.table-pay thead {
+    background: #f5f5f5;
+}
+
+.table-pay thead th,
+.table-pay tbody td{
+    font-size: 11px;
+    font-weight: 400;
+    color: #727171;
+}
+
+.table-pay-price {
+    font-size: 19.5px;
+}
+
+.table-pay.table>caption+thead>tr:first-child>td, .table-pay.table>caption+thead>tr:first-child>th, .table-pay.table>colgroup+thead>tr:first-child>td, .table-pay.table>colgroup+thead>tr:first-child>th, .table-pay.table>thead:first-child>tr:first-child>td, .table-pay.table>thead:first-child>tr:first-child>th {
+    border: none;
+}
+
+@media (min-width: 992px) {
+    .table-pay.table>tbody>tr>td, .table-pay.table>tbody>tr>th, .table-pay.table>tfoot>tr>td, .table-pay.table>tfoot>tr>th, .table-pay.table>thead>tr>td, .table-pay.table>thead>tr>th {
+        padding: 20px 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .table-pay {
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
+        min-height: .01%;
+        display: block;
+    }
+
+    .table-pay thead tr th:first-child {
+        min-width: 60px;
+    }
+
+    .table-pay thead tr th:nth-child(2) {
+        min-width: 115px;
+    }
+
+    .table-pay thead tr th:nth-child(3) {
+        min-width: 170px;
+    }
+
+    .table-pay thead tr th:nth-child(4) {
+        min-width: 80px;
+    }
+}
+
+.tab-content-mod .panel-heading {
+    background: #e8e8e8;
+    border-color: #e8e8e8;
+    border-radius: 0;
+    padding: 0;
+}
+
+.tab-content-mod .panel-heading:hover {
+    background: #d8d7d7;
+}
+
+.tab-content-mod .panel-heading .panel-title > a {
+    display: block;
+    padding: 17px 25px;
+    font-size: 19px;
+}
+
+.tab-content-mod .panel-heading .panel-title > a > span {
+    position: relative;
+}
+
+.tab-content-mod .panel-heading .panel-title > a > span:after {
+    content: '\f078';
+    font-family: "FontAwesome";
+    font-size:19.5px;
+    line-height: 1;
+    position: absolute;
+    top: 3px;
+    right: -30px;
+    color: #3082c2;
+}
+
+@media (max-width: 479px) {
+    .tab-content-mod .panel-heading .panel-title > a {
+        padding-right: 40px;
+    }
+    .tab-content-mod .panel-heading .panel-title > a > span {
+        display: block;
+    }
+    .tab-content-mod .panel-heading .panel-title > a > span:after {
+        right: -25px;
+    }
+}
+
+.tab-content-mod .panel-heading .panel-title > a[aria-expanded="true"] > span:after {
+    transform: rotate(-180deg);
+}
+
+.tab-content-mod .panel-group .panel {
+    border-radius: 0;
+}
+
+.tab-content-mod .panel-heading .panel-title {
+    color: #3082c2;
+    font-weight: 700;
+}
+
+.tab-pane-gray {
+    background: #f4f1f1;
+}
+
+.tab-content-mod .panel-group {
+    margin-bottom: 0;
+}
+
+.tab-content-mod .panel {
+    background: #f4f1f1;
+    box-shadow: none;
+    border-color: #f4f1f1;
+}
+
+.tab-content-mod .panel-body {
+    padding: 23px 26px;
+}
+
+.tab-content-mod .panel-body label {
+    font-size: 15px;
+    margin-bottom: 11px;
+}
+
+.tab-content-mod .panel-body select.form-control {
+    font-weight: 700;
+}
+
+.tab-content-mod .panel-body .form-control {
+    height: 42px;
+    color: #3a3a3a;
+    font-size: 14px;
+    border-radius: 9px;
+    border-color: #c6c6c6;
+    max-width:358px;
+}
+
+.tab-content-mod .panel-body form .form-group + .form-group {
+    margin-top: 30px;
+}
+
+.tab-content-mod .panel-body form .form-group + .form-group.offset-top {
+    margin-top: 60px;
+}
+
+.tab-content-mod .panel-body form .form-group + .form-check {
+    margin-top: 22px;
+}
+
+.tab-content-mod .panel-body form .form-check + .form-check {
+    margin-top: 20px;
+}
+
+.tab-content-mod .panel-body form .form-check input[type=checkbox] {
+    position: relative;
+    top: 1px;
+}
+
+.tab-content-mod .panel-body form .form-check span {
+    padding-left: 10px;
+}
+
+.tab-content-mod .panel-body form .form-check span {
+    cursor: pointer;
+}
+
+.tab-content-mod .panel-body form button.btn {
+    font-size: 16.5px;
+    font-weight: 700;
+    margin-top: 23px;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+.tab-pane-gray-light {
+    background: #faf9fd;
+}
+
+.tab-content-sub .pagination-product {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
 }

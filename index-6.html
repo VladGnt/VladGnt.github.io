@@ -113,7 +113,7 @@
                             <li role="presentation"><a href="#profile-sub" aria-controls="profile" role="tab" data-toggle="tab">Неактивные</a></li>
                         </ul>
                         <div class="tab-content tab-content-sub">
-                            <div role="tabpanel" class="tab-pane active" id="home-sub">
+                            <div role="tabpanel" class="tab-pane tab-pane-gray-light active" id="home-sub">
                                 <div class="tab-content-sub-1-title">
                                     Активные предложения:
                                 </div>
@@ -326,6 +326,34 @@
                                     </tr>
                                     </tbody>
                                 </table>
+                                <ul class="list-inline pagination-product">
+                                    <li class="pagination-product-prev">
+                                        <a href="#">
+                                            <span class="icon fa fa-angle-double-left"></span>
+                                            <span>Назад</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li><a href="#">11</a></li>
+                                    <li><a href="#">12</a></li>
+                                    <li><a href="#">......</a></li>
+                                    <li><a href="#">200</a></li>
+                                    <li class="pagination-product-next">
+                                        <a href="#">
+                                            <span>Вперед</span>
+                                            <span class="icon fa fa-angle-double-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                             <div role="tabpanel" class="tab-pane" id="profile-sub">
                                 <div class="pin-custom">
@@ -341,44 +369,182 @@
                         </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="profile">
-
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs nav-tabs-sub" role="tablist">
+                            <li role="presentation" class="active"><a href="#home-sub-2" aria-controls="home" role="tab" data-toggle="tab">Платежи и счёт</a></li>
+                        </ul>
+                        <div class="tab-content tab-content-sub">
+                            <div role="tabpanel" class="tab-pane tab-pane-gray-light active" id="home-sub-2">
+                                <table class="table table-responsive table-pay">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <a href="#">
+                                                <span>Дата</span>
+                                                <span class="icon fa fa-chevron-down"></span>
+                                            </a>
+                                        </th>
+                                        <th>Номер операции</th>
+                                        <th>Заголовок</th>
+                                        <th>Сумма</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td scope="row">10 дек</td>
+                                        <td>15459448</td>
+                                        <td>
+                                            <a href="#" class="table-pay-title">Срочное объявление</a>
+                                            <div class="table-pay-desc">Кроссовки по акционной цене</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-pay-price">50 грн</div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="list-inline pagination-product">
+                                    <li class="pagination-product-prev">
+                                        <a href="#">
+                                            <span class="icon fa fa-angle-double-left"></span>
+                                            <span>Назад</span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li><a href="#">6</a></li>
+                                    <li><a href="#">7</a></li>
+                                    <li><a href="#">8</a></li>
+                                    <li><a href="#">9</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li><a href="#">11</a></li>
+                                    <li><a href="#">12</a></li>
+                                    <li><a href="#">......</a></li>
+                                    <li><a href="#">200</a></li>
+                                    <li class="pagination-product-next">
+                                        <a href="#">
+                                            <span>Вперед</span>
+                                            <span class="icon fa fa-angle-double-right"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="messages">
+                    <div role="tabpanel" class="tab-pane tab-pane-gray" id="messages">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <span>Изменить контактные данные</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="town">Выбрать город</label>
+                                                <select class="form-control" id="town">
+                                                    <option>Николаев, Николаевская область, Заводской район</option>
+                                                    <option>Киев, Киевская область, Центральный район</option>
+                                                    <option>Львов, Львовская область, Корабельный район</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group offset-top">
+                                                <label for="author">Контактное лицо</label>
+                                                <input type="text" class="form-control" id="author">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone">Номер телефона</label>
+                                                <input type="number" class="form-control" id="phone">
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <span>Отключить предзаполнение</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" class="form-check-input">
+                                                    <span>Не показывать ве предложения на странице моего предложения</span>
+                                                </label>
+                                            </div>
 
+                                            <button type="submit" class="btn btn-secondary">Сохранить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <span>Изменить пароль</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <span>Изменить e-mail-адресс</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFour">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <span>Изменить e-mail-адресс</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                    <div class="panel-body">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingFive">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <span>Изменить e-mail-адресс</span>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                    <div class="panel-body">
+                                        5
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div role="tabpanel" class="tab-pane" id="settings">
 
                     </div>
                 </div>
             </div>
-            <ul class="list-inline pagination-product">
-                <li class="pagination-product-prev">
-                    <a href="#">
-                        <span class="icon fa fa-angle-double-left"></span>
-                        <span>Назад</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">6</a></li>
-                <li><a href="#">7</a></li>
-                <li><a href="#">8</a></li>
-                <li><a href="#">9</a></li>
-                <li><a href="#">10</a></li>
-                <li><a href="#">11</a></li>
-                <li><a href="#">12</a></li>
-                <li><a href="#">......</a></li>
-                <li><a href="#">200</a></li>
-                <li class="pagination-product-next">
-                    <a href="#">
-                        <span>Вперед</span>
-                        <span class="icon fa fa-angle-double-right"></span>
-                    </a>
-                </li>
-            </ul>
         </div>
     </section>
 </main>
