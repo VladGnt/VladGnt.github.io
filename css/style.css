@@ -3487,10 +3487,10 @@ h3 + .product-list {
         padding-left: 2.3%!important;
     }
 }
-
+ 
 .btn-modal-wrap .modal {
     top: 50%;
-    min-height: 70%;
+    min-height: 80%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -3667,4 +3667,4 @@ h3 + .product-list {
     .btn-modal-wrap.btn-modal-wrap-2 .form-group-justify label {
         min-width: 140px;
     }
-} 
+}
